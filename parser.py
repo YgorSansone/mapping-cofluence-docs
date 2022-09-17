@@ -10,7 +10,7 @@ class Parser:
     def __init__(self):
         self.pages = list()
         self.skip_pages = list()
-        self.skip_labels = json.loads(env['SKIP_LABELSs'])
+        self.skip_labels = json.loads(env['SKIP_LABELS'])
         self.parser_requests = Requests()
 
     def skip_page_by_label(self, labels):
